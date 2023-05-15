@@ -5,11 +5,10 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  
 }
 
-header{
-  background-color:green;
+header {
+  background-color: rgb(110, 9, 110);
   display: flex;
   justify-content: space-between;
   padding: 0 60px;
@@ -22,14 +21,64 @@ header .logo{
   font-weight: bold;
 }
 
-header ul{
+header ul {
   display: flex;
   gap: 26px;
+  color: #fff;
+
 }
 
 header a{
+  color: black;
   display: block;
   line-height: 46px;
-  margin: 10px 0;
-  color: #fff;
+  margin: 10px;
 }
+
+.centro {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.centro.dark {
+  background-color: #242424;
+}
+
+.switch {  
+  line-height: 40px;
+  background-color: black;
+  color: antiquewhite;
+  padding: 0 26px;
+  border-radius: 8px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+  transition-duration: 300ms;
+}
+
+.dark + .switch {
+  background-color: aliceblue;
+  color: black;
+}
+
+button {
+  background-color: rgb(22, 235, 3);
+  padding: 0 26px;
+  border-radius: 8px;
+  color: rgb(10, 9, 9);
+  border: 0;
+  line-height: 46px;
+  cursor: pointer;
+  
+  
+}
+
+
+
+
+

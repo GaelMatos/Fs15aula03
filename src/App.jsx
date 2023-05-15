@@ -6,6 +6,7 @@ import Sobre from './pages/Sobre';
 import Contato from './pages/Contato';
 import NotFound from './pages/NotFound';
 import PageLayout from './layouts/PageLayout';
+import Accordion from './components/Header/Accordion';
 
 
 const App = () => {
