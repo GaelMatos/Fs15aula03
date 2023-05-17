@@ -7,6 +7,12 @@
   list-style: none;
 }
 
+
+
+body{
+  background-color: #fff;
+}
+
 header {
   background-color: rgb(110, 9, 110);
   display: flex;
@@ -26,6 +32,10 @@ header ul {
   gap: 26px;
   color: #fff;
 
+}
+
+h1{
+  color: black;
 }
 
 header a{
@@ -67,16 +77,35 @@ header a{
 }
 
 button {
-  background-color: rgb(22, 235, 3);
+  background-color: rgb(235, 3, 123);
   padding: 0 26px;
   border-radius: 8px;
   color: rgb(10, 9, 9);
   border: 0;
+  box-shadow: 0 0 0 0 rgb(0, 0, 0);
+  transform: scale(1);
   line-height: 46px;
   cursor: pointer;
-  
-  
+  animation: pulse 2s infinite;
 }
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(16, 29, 213, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+
 
 
 

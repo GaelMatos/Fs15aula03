@@ -7,8 +7,14 @@ const Home = () => {
     const [darkmode, setDarkMode] = React.useState(false);
 
     const decrementar = () => {
-        setcontador(contador - 1)
+         setcontador(contador - 1)
     }
+
+    React.useEffect(() =>{
+
+    },[])
+
+
 
     return(
         <>
